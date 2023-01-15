@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <h1>BVE5 東京メトロ16000系</h1>
+      <img src="image/16134.jpg" alt="画像">
+      v1.0公開：2019年7月15日<br>v1.1公開：2019年8月11日<br>v1.2公開：2020年1月19日<br>v1.3公開：2020年9月21日<br>v1.4公開：2021年5月5日
+      <h2>はじめに</h2>
+      16000系は、当方が毎日利用している東京メトロ千代田線の主力車両で、2010年に前期車、2015年に後期車が登場しています。毎日利用することもあって、まずは！、とこの車両を製作することにしました。パネルは写真をベースとしながらも所々自分で絵画したり、雑音のないサウンドが求められたりと、難しいことの連続でしたが、色々な方に支えられ、最後まで作ることができました。皆様には心から感謝いたします。
+      <h2>データについて</h2>
+      多くの作者から前期車のアドオンが出ておりますが、当アドオンは後期車のデータとなっております。またVehicleデータが3種類ありますので、必ずデータ内のReadMe.txtをお読みください。
+      <br>20/1/19追記 前期車を公開しました！
+      <h2>指定路線</h2>
+      <a href="https://umikyut.ojaru.jp" target="_blank" rel="noopener noreferrer">UmikyuT様作小田急線</a>に指定いただいております。また、公開しておりますパッチを使用し、柏鉄道フォーラム様の常磐緩行線で運転できるようになっております。
+      <h2>ファイル配置・注意等</h2>
+           このデータを使用するには、専用のTIMSプラグインをダウンロードする必要があります。2種類ありますが、どちらも以下のように導入してください。<br>
+           <img src="image/16000tims.png" alt="画像"><br><br>
+            <button type=“button” onclick="location.href='https://drive.google.com/file/d/1ubAP9siSefdj0syct62uxQoEm0CY0kwk/view?usp=sharing'">TIMSプラグイン（メトロ用）</button>
+            <button type=“button” onclick="location.href='https://drive.google.com/file/d/1zUJrY3v1u1DaYvOeJyZ1EO9Ouu3lM8rJ/view?usp=sharing'">TIMSプラグイン（小田急用）</button><br>
+            また、運転動画等は無改造・最新版のものを使用してください。旧版のものでの運転動画の撮影は禁止します。<br><br>
+      <h2>Special thanks</h2>
+      <ul>
+        <li>わかめ太郎様・ニッシー様　アドバイスをいただきました。</li>
+        <li>あすく様　各種プラグインを使用させていただきました。</li>
+        <li>kikuike様　各種プラグインを使用させていただきました。</li>
+        <li>oer-meel様　小田急線用のATSプラグインを使用させていただきました。</li>
+        <li>高橋うさお様　メトロ総合プラグインを使用させていただきました。</li>
+        <li>りんくす様　motor音を製作していただきました。</li>
+        <li>jus様　motor音を制作していただきました。</li>
+        <li>UmikyuT様　小田急線データにご指定いただきました。</li>
+        <li>mackoy様　BVEを製作されました。</li>
+      </ul>
+      以上の方々には深く感謝いたします。
+      <h2>ダウンロード</h2>
+      v1.4でフォルダ構成が大幅に変わりました。すでにv1.3を持っている方は、一旦データを削除してから導入してください。<br>
+      <button type=“button” onclick="location.href='https://drive.google.com/file/d/1acv9sw5u-PwrP8LQV3qpcBMupKv2zsoo/view?usp=sharing'">ダウンロード</button>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2021</p>
+    </div>
+  </div>
+</body>
+</html>

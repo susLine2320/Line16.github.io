@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <img src="image/16124.jpg" alt="画像">
+      <body>16124F 金町駅 2018.8.30
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2021</p>
+      <table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d456_f7_010/5e915b59b1991/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center">
+    </div>
+  </div>
+</body>
+</html>

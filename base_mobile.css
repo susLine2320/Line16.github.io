@@ -1,0 +1,175 @@
+@charset "shift_jis";
+#footer #csslink a,
+#footer #csslink a:hover { text-decoration: none; }
+#footer #csslink {
+  text-align: right;
+  font-size: 80%;
+  margin: 0;
+  padding: 0 20px 5px 0;
+}
+#footer #csslink,
+#footer #csslink a,
+#footer #csslink a:hover { color: #006699; }
+
+#footer #csslink,
+#footer #csslink a,
+#footer #csslink a:hover { background-color: #fffb07; }
+body {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    background: #fcfae0;
+    font-size: 14px;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+#wrapper {
+  text-align: left;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  border: 1px solid #fffb07;
+}
+
+#header {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 20px 5px 20px;
+  background-color: #fffb07;
+}
+
+#contents {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.contents-inner {
+  margin: 20px 20px 20px 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*
+.photo {
+  margin: 20px 20px 20px 20px;
+  padding: 0px 0px 0px 0px;
+}*/
+
+#sidebar {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.sidebar-inner {
+  margin: 20px 10px 20px 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*---------------------------------�t�b�^�[����*/
+#footer {
+  text-align: center;
+  clear: both;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: #fffb07;
+}
+
+/*----------------------------------------------------------
+  ���j���[�����̎w��
+----------------------------------------------------------*/
+.menu {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.menu li a {
+  text-decoration: none;
+  width: 170px;
+  display: block;
+  margin: 0px 0px 1px 0px;
+  padding: 5px 5px 5px 5px;
+  background-color: #333333;
+  color: #cccccc;
+  overflow: hidden;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+  background-color: #fffb07;
+  color: #000033;
+}
+
+/*----------------------------------------------------------
+  �w�b�_�[���̎w��
+----------------------------------------------------------*/
+
+/* -- ���o�� -- */
+h1 {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    color: #101010;
+    border-left: 7px solid #116be0;
+    border-bottom:5px double #116be0;
+    padding:.3em
+}
+h2 {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    color: #101010;
+    border-left: 4px solid #3694c8;
+    border-bottom:4px double #3694c8;
+    padding:.3em
+}
+
+h3 {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    color: #101010;
+    border-left: 2px solid #0bc2cf;
+    border-bottom:2px double #0bc2cf;
+    padding:.3em
+}
+
+h4 { }
+
+h5 { }
+
+h6 { }
+
+p {
+  margin: 0px 0px 0.5em 0px;
+  padding: 0px 0px 0px 0px;
+  line-height: 1.5em;
+}
+
+/* -- ���X�g -- */
+#contents ul {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    /*font-style: italic;*/
+    color: #666666;
+    font-size: 16px;
+    border-top:2px dashed #ff9900;
+    border-bottom:2px dashed #ff9900;
+}
+
+#contents ol {
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    /*font-style: italic;*/
+    color: #666666;
+    font-size: 16px;
+    border-top:2px dashed #ff9900;
+    border-bottom:2px dashed #ff9900;
+}
+
+#contents li { }
+
+/*----------------------------------------------------------
+  ���쌠�\�L
+----------------------------------------------------------*/
+#footer p {
+  margin: 0px 0px 0px 0px;
+  padding: 0.5em 0 0.5em 0;
+}

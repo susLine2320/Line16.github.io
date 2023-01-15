@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">s
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <h2>当サイトのYouTubeチャンネル</h2>
+      当サイトでは、以下のYouTubeチャンネル「16号線のチャンネル」を開設しています。主にトレインビジョンの再現動画や自動放送動画、Bve5の製作進捗動画を公開しております。是非ご覧ください。
+      <a href="https://www.youtube.com/channel/UC03yZa_PaPTHD6n3mC3KhQg?view_as=subscriber"　target="_blank"　><img src="image/youtube.png" alt="リンク"></a>
+      <h2>トレインビジョン動画の注意</h2>
+      <ol>
+        <li>画面の2次利用は原則認めません。ただし、スクリーンショットなどで紹介する場合に限ってこれを認めます。</li>
+        <li>音声の2次利用については、用途を明確にした上で一度連絡をください。そして、完成後に完成品をもう一度私に見せて頂くようお願いいたします。</li>
+        <li>その他、お困りの点がございましたら、何らかの方法でお問い合わせください。</li>
+      </ol>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2021</p>
+    </div>
+  </div>
+</body>
+</html>

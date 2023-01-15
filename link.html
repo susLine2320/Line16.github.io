@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <h2>リンク集</h2>
+      　いつもお世話になっている作者の方、大作を作り上げている方のサイトを紹介いたします。
+      当サイトへリンクを張るのは大歓迎です。ただしホームに張っていただくようお願いいたします。リンクは下の物をご利用ください。
+      また、相互リンクご希望の方は何らかの方法でお問い合わせください（Twitterが早いです）。
+      <table border="1">
+        <tr>
+          <th width="27%">バナー</th>
+          <th width="12%">管理人</th>
+          <th width="61%">説明</th>
+        </tr>
+        <tr>
+          <td><a href="http://bvets.net/"　target="_blank"　><img src="image/mackoy.jpg" alt="リンク"></a></td>
+          <td>Mackoy様</td>
+          <td>この素晴らしいソフトを開発されている方。軽量化、一人でも多くの人に楽しんでもらえることを考えておられ、やさしさが垣間見えます。</td>
+        </tr>
+        <tr>
+          <td><a href="http://shtr-m.net/"　target="_blank"　><img src="image/shuttle.gif" alt="リンク"></a></td>
+          <td>しゃとる様</td>
+          <td>BVE界の巨匠といっても差し支えない方。路線、車両ともに最高のクオリティー。何度でも遊びたくなります。</td>
+        </tr>
+        <tr>
+          <td><a href="http://vertah.sakura.ne.jp/"　target="_blank"　><img src="image/vertah.png" alt="リンク"></a></td>
+          <td>Vertah様</td>
+          <td>Bveで各種車両データを公開している方。しゃとるさんとのペアが多いみたいです。</td>
+        </tr>
+        <tr>
+          <td><a href="http://sigf.sakura.ne.jp/"　target="_blank"　><img src="image/shallow.png" alt="リンク"></a></td>
+          <td>しゃろー様</td>
+          <td>主に西武線関連を作っているプロの方。福岡なども公開されており、その活動力の広さには驚かされます。</td>
+        </tr>
+        <tr>
+          <td><a href="http://shibaumi.wixsite.com/denenshippu"　target="_blank"　><img src="image/umishiba.jpg" alt="リンク"></a></td>
+          <td>海芝様</td>
+          <td>bveで東武線を作ってる方。今は分断されてますが、将来はつなげるそうです。それにしても駅の再現がすごいなあ…</td>
+        </tr>
+        <tr>
+          <td><a href="https://umikyut.ojaru.jp/index.html"　target="_blank"　><img src="image/umikyu.png" alt="リンク"></a></td>
+          <td>うみきゅう様</td>
+          <td>BVEで小田急線を作っている方。当方の車両も指定いただいております。遠近両方ともリアルな再現に驚かされます。</td>
+        </tr>
+        <tr>
+          <td><a href="http://musashinoroom.web.fc2.com/index.html"　target="_blank"　><img src="image/musashino.png" alt="リンク"></a></td>
+          <td>むさしのチャンネル様</td>
+          <td>「トレインビジョン界の巨匠」。この方のスクリプトがなければトレビ制作は難しかったでしょう。また、大物なのにもかかわらず、リプ1つ1つに返信を返していらっしゃって、その気配りには尊敬します。</td>
+        </tr>
+        <tr>
+          <td><a href="https://wakamesan-bve.jimdofree.com/"　target="_blank"　><img src="image/wakame.jpg" alt="リンク"></a></td>
+          <td>わかめ太郎さん</td>
+          <td>相互リンク。高1で西武池袋線を作ってるすごい方。こんな人とでも親しくしてくれるいい人です。撮り鉄だとか。</td>
+        </tr>
+        <tr>
+          <td><a href="https://nisshi24.jimdofree.com/"　target="_blank"　><img src="image/nissie.png" alt="リンク"></a></td>
+          <td>ニッシーさん</td>
+          <td>相互リンク。西武線のトレインビジョンを作ってる方。仕事の速さにはとても尊敬します。僕もこれくらい早く仕事を終わらせたい…。</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2021</p>
+    </div>
+  </div>
+</body>
+</html>

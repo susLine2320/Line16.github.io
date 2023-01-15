@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <h1>利用規約</h1>
+      2021年5月2日改訂版
+      <h2>1.BVEについて</h2>
+      <h3>1.1. 転載と二次利用について</h3>
+      <ul>
+        <li>1.1.1. 当サイトのアドオンの無断利用を禁止します。ただし、個人の利用ではこの限りではありません。</li>
+        <li>1.1.2. 当サイトのアドオンを利用したい方は、事前に何らかの方法でろくらいんにお問い合わせください。こちらで内容を判断し、可否をおしらせします。</li>
+        <li>1.1.3. 他作者のデータが含まれている場合があります。そのデータの2次利用についてはこちらで許可を出すことはできません。元データの作者の方のホームページなどを熟読し、条件によってはそれに従ってお問い合わせください。</li>
+      </ul>
+      <h3>1.2. 改造と動画投稿について</h3>
+      <ul>
+        <li>1.2.1. 改造については、これを認めます。</li>
+        <li>1.2.2. 改造したものを公開する場合には、事前に何らかの方法でろくらいんにお問い合わせください。こちらで内容を判断し、可否をおしらせします。</li>
+        <li>1.2.3. 動画を投稿する際は、無改造に限り、連絡は不要です。ただし、保安装置を開放することは避けてください。</li>
+        <li>1.2.4.改造したデータを使用した動画を投稿するときは、限定公開にした上でリンクをお送りください。こちらで内容を判断し、可否をおしらせします。</li>
+        <li>1.2.5. 他作者のデータが含まれる改造物を動画投稿、あるいは公開する際には、他作者のReadMeもご覧ください。</li>
+      </ul>
+      <h3>1.3. その他</h3>
+      <ul>
+        <li>1.3.1. 公式に書かれているレベルの基本的な操作、パソコン本体の操作についてはお教えできません。</li>
+        <li>1.3.2. ここに書かれていることとReadMeに書かれていることが異なる場合は、ReadMeを優先します。</li>
+        <li>1.3.3. 上記の状況に当てはまらず、かつ公開を伴うものは、必ず連絡をしてください。</li>
+      </ul>
+      <h2>2.トレインビジョン再現について</h2>
+      <ul>
+        <li>2.1. 画面の2次利用は原則認めません。ただし、スクリーンショットなどで紹介する場合に限ってこれを認めます。</li>
+        <li>2.2. 音声の2次利用については、用途を明確にした上で一度ろくらいんに連絡をください。そして、完成後に完成品をもう一度私に見せて頂くようお願いいたします。</li>
+        <li>2.3. その他、お困りの点がございましたら、何らかの方法でろくらいんにお問い合わせください。</li>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2021</p>
+    </div>
+  </div>
+</body>
+</html>
