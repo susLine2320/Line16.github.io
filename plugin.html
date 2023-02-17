@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>ろくらいんの部屋</h1>
+      <body>Bveデータの配布やトレインビジョンの再現を行なっています。</body>
+
+    </div>
+    <div id="contents">
+      <div class="contents-inner">
+      <h1>BVE5/6 ATSプラグイン</h1>
+      最終更新日：2023年2月18日<br>
+      <img src="image/2053.jpg" alt="画像">
+      喜多見駅。各停表示はすばらしいですね。よく見るとサインも旧仕様です。<br><br>
+      当サイトで公開中のATSプラグイン一覧です。基本的にソースコードを同梱しておりますので、各自研究にお役立てください。GitHubからダウンロードするものに関しては、GitHubページ右側の「Release」の部分よりダウンロードください。
+      <h2>自炊TIMSプラグイン</h2>
+      unicorn様原作、kikuike様がソースを分離、機能追加し、TIMSプラグインとして独立させたものです。
+      当方では、このうちメトロ総合プラグイン・小田急線プラグインとの両立に対応したものを公開しているほか、
+      これをさらに推し進め、TIS用の構文と共通化し、設定を楽にした物も公開しています。<br><br>
+      <button type=“button” onclick="location.href='https://drive.google.com/file/d/1ubAP9siSefdj0syct62uxQoEm0CY0kwk/view?usp=sharing'">TIMSプラグイン（メトロ用、Google Drive）</button>
+      <button type=“button” onclick="location.href='https://drive.google.com/file/d/1zUJrY3v1u1DaYvOeJyZ1EO9Ouu3lM8rJ/view?usp=sharing'">TIMSプラグイン（小田急用、Google Drive）</button><br>
+      <button type=“button” onclick="location.href='https://github.com/susLine2320/TIMS_new_9N'">TIMS_new_TM（当方で機能改良中、GitHub）</button>
+
+      <h2>メトロ用乗降促進プラグイン</h2>
+      メトロ総合プラグインと併用することによって、マスコンキー切替に連動して各社の乗降促進を切り替えることができます。
+      なお、マスコンキー情報なしでも89番地上子を利用して、方向別対応の乗降促進プラグインとして利用できます。<br><br>
+      <button type=“button” onclick="location.href='https://github.com/susLine2320/jsc'">メトロ用乗降促進プラグイン（GitHub）</button>
+ 
+      <h2>メトロ総合プラグイン専用Bve-autopilotプラグイン</h2>
+      メトロ総合プラグインを使用する車両において、メトロ総合プラグインのキー操作に応じてATO/TASCを利用できるプラグインです。
+      このプラグインでは既存のautopilotプラグインと完全な地上子の互換性があるほか、Unicorn様原作のTASCプラグインの地上子（21番、23番）、oer-meel様原作の
+      小田急線プラグインの地上子（200番）にも標準対応します。<br><br>
+      <button type=“button” onclick="location.href='https://github.com/susLine2320/bve-autopilot-S'">メト総専用autopilot（GitHub）</button>
+
+      <h2>Translate-oerプラグイン（A/Bセット）</h2>
+      このプラグインは、千代田線系統の各種路線・車両の対応保安装置が汎用ATS、メトロ総合プラグイン、小田急線プラグイン、ATC-10プラグインなどと多様化し、
+      「好きな車両で運転する」というのが困難となっているのに一石を投じる（はずの）変換プラグインです。変換といっても端子台のインデックス変換のみならず、
+      複数表示灯の統合制御やレバーサ、マスコンの正常動作のための変換コードなども加えており、おそらく千代田線直通系統の全車両に適応します。<br>
+      保安装置部は小田急線内は小田急線プラグイン、メトロ・JR線内はメトロ総合プラグインのものを利用し、モニターや各種機能は双方の「いいとこどり」をします。
+      構造上、メトロ総合プラグイン、小田急線プラグインとの併用を前提としており、オプションとして上記のautopilotプラグインやTIMSプラグインが使用できます。<br>
+      詳細は<a href="https://t.co/ytJRtanmIk">端子台</a>をご覧ください。<br><br>
+      <button type=“button” onclick="location.href='https://github.com/susLine2320/Translate_oer'">TranslateA（レバーサ制御、表示灯変換など）</button>
+      <button type=“button” onclick="location.href='https://github.com/susLine2320/Translate_oerB'">TranslateB（表示灯制御、乗降促進など)</button>
+
+      <h2>モジュール</h2>
+      ちょっとしたモジュールを今後順次公開予定です。
+
+      <h2>制作依頼</h2>
+      プラグインの制作依頼やご相談は、当方twitterまたはメールまでお願いいたします。初心者のためご要望に沿えないこともございます。
+
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Update.html">Update</a></li>
+          <li><a href="YouTube.html">YouTube</a></li>
+          <li><a href="bvedata.html">BVE Data</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="link.html">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Since 2018.7.15</p>
+      <p>&copy;　Line-16 Copyright 2018-2023</p>
+    </div>
+  </div>
+</body>
+</html>
