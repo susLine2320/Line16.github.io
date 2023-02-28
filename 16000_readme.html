@@ -1,0 +1,158 @@
+<!--Readmeなど項目のみのページ用-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ろくらいんの部屋</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!- 210504追加　マルチ端末対応 - >
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        // 画面上部にスクロールするボタン
+        $(function() {
+            var pageTop = $('.btn-pagetop');
+            pageTop.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pageTop.fadeIn();
+                } else {
+                    pageTop.fadeOut();
+                }
+            });
+            pageTop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500, 'swing');
+                pageTop.blur();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="contents">
+      <div class="contents-inner">
+        <!-- この中に項目をコピペ 上限-->
+        <h1 id="bve5-%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD16000%E7%B3%BB">Bve5 東京メトロ16000系</h1>
+        <h3 id="ver-152023%E5%B9%B44%E6%9C%881%E6%97%A5%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3">Ver 1.5(2023年4月1日バージョン）</h3>
+        <h2 id="%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB">はじめに</h2>
+        <p>この度は、東京メトロ16000系データをダウンロードしてくださいましてありがとうございます。運転前に必ず当説明書をお読みください。</p>
+        <h2 id="%E8%BB%8A%E4%B8%A1%E6%8C%87%E5%AE%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">車両指定について</h2>
+        <p>当車両には、前期車（第14編成）と後期車（第22編成）2種類のVehecle.txtが付属しております。路線側のRun音の割り当ての都合で、_ohとついたVehicleも用意しています（旧版のようなプラグインの違いはありません）</p>
+        <h4 id="a%E7%B7%9A%E6%88%90%E5%9F%8E%E5%AD%A6%E5%9C%92%E5%89%8D%E3%83%BB%E6%9C%AC%E5%8E%9A%E6%9C%A8%E5%AF%84%E3%82%8A%E5%85%88%E9%A0%AD%E8%BB%8A">A線（成城学園前・本厚木寄り先頭車）</h4>
+        <ul>
+        <li><code>L16\tm16000\Vehicle_vt.txt</code>（前期車）</li>
+        <li><code>L16\tm16000\Vehicle_vm.txt</code>（後期車）</li>
+        <li><code>L16\tm16000\Vehicle_vt_oh.txt</code>（前期車）</li>
+        <li><code>L16\tm16000\Vehicle_vm_oh.txt</code>（後期車）</li>
+        </ul>
+        <h4 id="b%E7%B7%9A%E5%8C%97%E7%B6%BE%E7%80%AC%E3%83%BB%E6%88%91%E5%AD%AB%E5%AD%90%E5%AF%84%E3%82%8A%E5%85%88%E9%A0%AD%E8%BB%8A">B線（北綾瀬・我孫子寄り先頭車）</h4>
+        <ul>
+        <li><code>L16\tm16000\Vehicle_vt_B.txt</code>（前期車）</li>
+        <li><code>L16\tm16000\Vehicle_vm_B.txt</code>（後期車）</li>
+        <li><code>L16\tm16000\Vehicle_vt_oh_B.txt</code>（前期車）</li>
+        <li><code>L16\tm16000\Vehicle_vm_oh_B.txt</code>（後期車）</li>
+        </ul>
+        <p>車両の保安装置はメトロ・JRのCS-ATC（メトロ総合プラグイン）、小田急のD-ATS-P（小田急線用プラグイン）に対応しています。OM-ATSは対応しておりません（前期車のみ今後の対応を検討いたします）。</p>
+        <p>また、路線作者の方で、当車両を指定車両にしたい方がいらっしゃいましたら、勝手に指定していただいて構いません。ただ、当方に連絡を入れていただけると、路線を紹介することができますので、可能ならご連絡をお願いいたします。</p>
+        <h2 id="%E9%81%8B%E8%BB%A2%E6%96%B9%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">運転方法について</h2>
+        <p>まずマスコンキーを挿入します。レバーサ断、マスコン非常の状態で、東京メトロ各線を運転するときは8を1回、JR常磐線を運転するときは8を2回、小田急線を運転するときは8を3回押してください。</p>
+        <p>保安装置の切り替えには5,6キーを使用します。ATCからATSの切り替えの際には操作の必要があります。</p>
+        <p>JRとワンマン路線以外の路線で運転するときは車掌からの合図ブザーを待ってから発車してください。</p>
+        <h2 id="%E3%82%AD%E3%83%BC%E6%93%8D%E4%BD%9C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">キー操作について</h2>
+        <p>キー操作は以下のようになっております。</p>
+        <ul>
+        <li>2：乗降促進（押している間乗降促進メロディー、離すと放送、停止時のみ）</li>
+        <li>4：耐雪ブレーキ（ブレーキ4ステップ以上）</li>
+        <li>5・6：ATC切り替えスイッチ（ブレーキ7ステップ以上）</li>
+        <li>Space&amp;5・6：ATO切り替えスイッチ（ブレーキ7ステップ以上）</li>
+        <li>5＆6：ATO出発スイッチ</li>
+        <li>7・8：マスコンキー（マスコン非常、レバーサ断）</li>
+        <li>8：勾配起動（ブレーキ5ステップ以下）</li>
+        <li>9：回生開放（停止時）</li>
+        <li>0：ハイビーム</li>
+        <li>Home：非常ブレーキ復帰</li>
+        <li>End：TASC開放（小田急線内のみ）</li>
+        <li>End：合図ブザー</li>
+        <li>PgUp・PgDn：種別表示機切り替え</li>
+        <li>Enter：電気警笛</li>
+        <li>プラスキー：空気警笛</li>
+        </ul>
+        <h2 id="%E6%93%8D%E4%BD%9C%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">操作に関して</h2>
+        <p>プラグイン関係の操作で分からないことがあったら、まずは公式サイトを見てください（ただし一部の機能は使用できません）。ただし、絶対にプラグイン製作者や他の方々にご迷惑をかけないようお願いします。</p>
+        <ul>
+        <li><a href="http://www.nozomi.vc/71_ats/metro/user.htm">メトロ総合プラグイン</a>	高橋うさお様</li>
+        <li><a href="https://souko.weebly.com/oer_atspl.html">小田急線用プラグイン</a>	oer-meel様</li>
+        </ul>
+        <p>また、この車両のプラグインには変換プラグインを使用しており（下記詳細）、独自操作があります。詳しくは端子台（同梱）をご確認ください。</p>
+        <p>（追記）magicant様のBve-autopilotによるTASC機能は小田急線内では使用できないようになっています。小田急線内では小田急ATSプラグインに付属のTASCを利用してください。</p>
+        <h2 id="%E8%91%97%E4%BD%9C%E6%A8%A9">著作権</h2>
+        <p>特定のライセンスは設定していませんが、以下の要項を必ずお守りください。</p>
+        <p>一部のデータは許可を得てお借りしております。これらのデータの無断転載・2次利用は固くお断りいたします。こちらにその旨の質問を寄せられても、対処できません。</p>
+        <ul>
+        <li>Ats.dll 高橋うさお様</li>
+        <li>NotchNumber.dll あすく様</li>
+        <li>atscnt.wav ぐりぃん・しゃとる様（9000系より借用）</li>
+        <li>CSC20_ND.dll Unicorn様</li>
+        <li>bve-autopilot.dll,Detailmanager_.dll,Detailmanager.exe magicant様（bve-autopilotは当方で改変を加えており、<a href="https://github.com/susLine2320/bve-autopilot-S">GitHub</a>で公開しています。）</li>
+        <li>OdakyuAts.dll,Pattern.wav oer-meel様</li>
+        <li>sta1.wav,sta2.wav 鉄道・BVE・車内放送ちゃんねる様</li>
+        <li>PluginConverter.dll ハルピー様</li>
+        </ul>
+        <p>また、「sound3」フォルダ内のMotor*.wavと「MotorNoise」内のデータは、本データのためにりんくす様に制作していただいたものです。これらのデータの2次利用については、事前にりんくす様にお問い合わせください。</p>
+        <p>「sound」フォルダ内のMotor*.wavと「MotorNoise」内のデータは、jus様に制作していただいたものです。これらのデータの2次利用はお断りいたします。</p>
+        <p>translate_oer.dll及びtranslate_oerB.dllは当方のデータです。このデータに関する詳細は添付のExcelファイルをご確認ください。</p>
+        <p>そのほかのデータの2次利用については、事前にLine-16にお問い合わせください。</p>
+        <h2 id="%E5%8B%95%E7%94%BB%E6%8A%95%E7%A8%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">動画投稿について</h2>
+        <p>動画については、未改造でしたら許可なしで投稿していただいて構いません。ただし、必ず保安装置を使用し、常識的な運転をしてください（つまりD-ATS-PまたはCS-ATCの路線でのみ使用してください。現実での運用実績は問いません）。改造した場合は、一度限定公開などで公開していただいてから、リンクを当方にお送りください。当方で判断し、可否をお知らせします。他の方の路線を使う場合は、その方の要項もご確認ください。</p>
+        <p>ATO/TASCについては、原則切った状態で運転してください。これは運転シミュレーターとしての性質を加味したものです。ただし、路線側のTASC試運転の場合など、意図がある場合は許可しますので上記の通りご連絡ください。なお、運転路線の作者の方に限っては無連絡でのATO/TASCの使用が可能です。</p>
+        <h2 id="%E8%B5%B0%E8%A1%8C%E9%9F%B3%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">走行音割り当てについて</h2>
+        <p>走行音については、通常版では高橋うさお様の5050系に準じております。</p>
+        <ul>
+        <li>Run 0：バラスト（定尺）</li>
+        <li>Run 1：スラブ・直結道床</li>
+        <li>Run 2：トンネル（広断面）</li>
+        <li>Run 3：橋梁</li>
+        <li>Run 4：バラスト（ロング）</li>
+        <li>Run 5：トンネル（狭断面）</li>
+        </ul>
+        <p>小田急線用のVehicleではoer-meel様の4000形に準じております。</p>
+        <ul>
+        <li>Run 0：スラブ・直結道床</li>
+        <li>Run 1：橋梁</li>
+        <li>Run 2：トンネル（狭断面）</li>
+        <li>Run 3：スラブ・直結道床</li>
+        <li>Run 4：バラスト（定尺）</li>
+        <li>Run 5：トンネル（狭断面）</li>
+        </ul>
+        <p>このデータを利用したことによるいかなる損害も、当方は補償いたしません。</p>
+        <h2 id="%E6%9B%B4%E6%96%B0%E6%97%A5%E6%99%82">更新日時</h2>
+        <ul>
+        <li>v1.0公開：2019年7月15日</li>
+        <li>v1.1公開：2019年8月11日</li>
+        <li>v1.2公開：2020年1月19日</li>
+        <li>v1.3公開：2020年9月21日</li>
+        <li>v1.4公開：2021年5月5日　ファイル構成変更、Panel実写化</li>
+        <li>v1.5公開：2023年4月1日　プラグイン関係大幅変更、サウンド刷新（予定）</li>
+        </ul>
+        <h2 id="author">Author</h2>
+        <ul>
+        <li>Twitter <a href="https://twitter.com/16000land">@16000land</a></li>
+        <li>Web <a href="susLine2320.github.io">GitHub</a></li>
+        <li>Mail <a href="chiyoda16122@gmail.com">GMail</a></li>
+        </ul>
+        <p>©Line-16 2018-2023</p>
+        <!-- この中に項目をコピペ 下限-->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
