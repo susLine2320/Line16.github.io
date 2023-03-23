@@ -110,14 +110,21 @@ height: auto;
 ----------------------------------------------------------*/
 
 /* -- ���o�� -- */
+
 h1 {
+  font-size: 28px;
+  line-height: 1;
+  font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+}
+
+h2 {
     font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
     color: #101010;
     border-left: 7px solid #116be0;
     border-bottom:5px double #116be0;
     padding:.3em
 }
-h2 {
+h3 {
     font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
     color: #101010;
     border-left: 4px solid #3694c8;
@@ -125,19 +132,13 @@ h2 {
     padding:.3em
 }
 
-h3 {
+h4 {
     font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
     color: #101010;
     border-left: 2px solid #0bc2cf;
     border-bottom:2px double #0bc2cf;
     padding:.3em
 }
-
-
-h5 {
-    font-size: 12px;
-    line-height: 1;
- }
 /*
 h4 { }
 
