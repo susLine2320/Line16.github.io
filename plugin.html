@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- 210504追加　マルチ端末対応 -->
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
-    <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
+    <link rel="stylesheet" media="screen and (max-width:968px)" href="base_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:969px)" href="base.css">
     <link href="button.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
     <div id="contents">
       <div class="contents-inner">
       <h1>BVE5/6 ATSプラグイン</h1>
-      最終更新日：2023年2月18日<br>
+      最終更新日：2023年7月10日<br>
       <img src="image/2053.jpg" alt="画像">
       喜多見駅。各停表示はすばらしいですね。よく見るとサインも旧仕様です。<br><br>
       当サイトで公開中のATSプラグイン一覧です。基本的にソースコードを同梱しておりますので、各自研究にお役立てください。GitHubからダウンロードするものに関しては、GitHubページ右側の「Release」の部分よりダウンロードください。
@@ -62,6 +62,11 @@
       <a href="https://drive.google.com/file/d/1zUJrY3v1u1DaYvOeJyZ1EO9Ouu3lM8rJ/view?usp=sharing" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
       <h4><img src="image/icon/github-mark.svg" alt="image" width="16px" height="16px"> TIMS_new_TM（メトロ総合プラグイン対応　当方で機能改良中）　ダウンロード</h4>
       <a href="https://github.com/susLine2320/TIMS_new_9N" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
+      <br><br>
+      また、こちらは、ライセンスを緩和したうえで、snp2プラグインとの互換性も視野に入れたバージョンです。
+      自炊TIMSプラグインのバグを修正しているほかは完全な互換性があるほか、従来のものと異なり車両に組み込んで使用することもできます。
+      <h4><img src="image/icon/github-mark.svg" alt="image" width="16px" height="16px"> TIMS_sierra（ライセンス緩和版）　ダウンロード</h4>
+      <a href="https://github.com/susLine2320/TIMS_Sierra" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
  
       <h2>メトロ総合プラグイン専用Bve-autopilotプラグイン</h2>
       メトロ総合プラグインを使用する車両において、メトロ総合プラグインのキー操作に応じてATO/TASCを利用できるプラグインです。
@@ -82,6 +87,16 @@
       <h4><img src="image/icon/github-mark.svg" alt="image" width="16px" height="16px"> MetropiLoader　ダウンロード</h4>
       <a href="https://github.com/susLine2320/MetropiLoader" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
 
+      <h2>CT氏TIMSプラグイン用補助プラグイン</h2>
+      このプラグインはCT様が制作されているTIMSプラグインを補助し、自炊TIMSプラグイン・snp2との差分機能の再現や、
+      標準ではサポートされていない電車用TIMSの地上子配置に対応するものです。<br>
+      差分機能には進行方向矢印やラグが大きい速度計、指針型圧力計、ブレーキ減圧機能などを備えているので、新系列列車の再現に広くお使いいただけます。<br>
+      <b>試行段階ですので、是非お使いいただき、ご報告を頂ければと思います。</b><br>
+      <h4><img src="image/icon/github-mark.svg" alt="image" width="16px" height="16px">CT氏TIMSプラグイン用補助プラグイン　ダウンロード</h4>
+      <a href="file\TIMS_Beacon_230710.zip" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
+
+      
+
       <h2>自炊ATC-10プラグイン</h2>
       新系列統合型プラグインの各プラグインと互換性のあるATC-10のプラグインです。すでに公開されているものよりメトロ総合プラグインとの
       互換性を考慮しているほか、スライド形式でない従来形式の現示にも対応します。もとはkikuike様のATC-6です。<br>
@@ -98,9 +113,19 @@
       <h3>日付表示プラグイン</h3>
       日付を取得し、表示するプラグインです。単に現在の日付を指定するだけでなく、曜日や年を地上子で指定することによって、
       現在の日付に近く、条件が合致する日付を表示できます。<br>
-      既知の不具合：3～12月に使用すると、表示するべき日付が1日ずれます。<br>
+      <b>既知の不具合：3～12月に使用すると、表示するべき日付が1日ずれます。</b><br>
       <h4><img src="image/icon/google-drive-logo_icon-icons.com_72727.svg" alt="image" width="16px" height="16px"> 日付表示プラグイン　ダウンロード</h4>
       <a href="https://drive.google.com/file/d/1HgIpv4SdmLXfHoFdGAAlLD08bO3clQ78/view?usp=share_link" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
+
+      <h3>定速プラグイン</h3>
+      定速プラグインです。本体側の定速と異なり、動作する速度帯やブレーキ段数などをカスタマイズできます。<br>
+      CT様の「MON_TIMS_INTEROSプラグイン」付属のものと同機能です。<br>
+      おまけ：試作品として、メトロ総合プラグインと併用にて動作する「E233系向け定速プラグイン」を公開しています。将来的にはハンドル定速プラグインとして、普遍的に利用可能とする予定です。<br>
+      <h4><img src="image/icon/google-drive-logo_icon-icons.com_72727.svg" alt="image" width="16px" height="16px"> 定速プラグイン　ダウンロード</h4>
+      <a href="https://drive.google.com/file/d/1XvxqK-FX_B62zEhnFo6m9buYY1fJlbBe/view?usp=sharing" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
+      <h4><img src="image/icon/google-drive-logo_icon-icons.com_72727.svg" alt="image" width="16px" height="16px"> E233系向け定速プラグイン　ダウンロード</h4>
+      <a href="https://drive.google.com/file/d/1FXG-63tNsznF45fcIZjvqAD-cPndicUN/view?usp=sharing" class="btn04 bordercenter" target="_blank" rel="noopener noreferrer"><span>ダウンロード</span></a>
+
 
       <h2>制作依頼</h2>
       プラグインの制作依頼やご相談は、当方twitterまたはメールまでお願いいたします。初心者のためご要望に沿えないこともございます。
