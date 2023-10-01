@@ -58,6 +58,16 @@ height: auto;
   padding: 0px 0px 0px 0px;
 }
 
+
+.box-low{
+  display: flex;
+  justify-content: center;
+}
+
+.box-low img{
+  margin: 3px;
+}
+
 /*
 .photo li{
   float: left;
@@ -159,7 +169,7 @@ p {
   line-height: 1.5em;
 }
 
-/* -- ���X�g -- */
+/*番号なし箇条書き*/
 #contents ul {
     font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
     /*font-style: italic;*/

@@ -54,6 +54,14 @@ height: auto;
   padding: 0px 0px 0px 0px;
 }
 
+.box-low{
+  justify-content: center;
+}
+
+.box-low img{
+  margin: 3px;
+}
+
 /*
 .photo {
   margin: 20px 20px 20px 20px;

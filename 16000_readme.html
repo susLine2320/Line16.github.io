@@ -11,12 +11,16 @@
     <link rel="stylesheet" media="screen and (max-width:768px)" href="base_mobile.css">
     <link rel="stylesheet" media="screen and (min-width:769px)" href="base.css">
     <link href="button.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/icon/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="image/icon/android-chrome-192x192.png" sizes="192x192">
 
     <script>
         // 画面上部にスクロールするボタン
+        /*
         $(function() {
             var pageTop = $('.btn-pagetop');
             pageTop.hide();
@@ -35,6 +39,7 @@
                 return false;
             });
         });
+        */
     </script>
 </head>
 
@@ -44,7 +49,7 @@
       <div class="contents-inner">
         <!-- この中に項目をコピペ 上限-->
         <h1 id="bve5-%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD16000%E7%B3%BB">Bve5 東京メトロ16000系</h1>
-        <h3 id="ver-152023%E5%B9%B44%E6%9C%881%E6%97%A5%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3">Ver 1.5(2023年4月1日バージョン）</h3>
+        <h3 id="ver-152023%E5%B9%B410%E6%9C%881%E6%97%A5%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3">Ver 1.5（2023年10月1日バージョン）</h3>
         <h2 id="%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB">はじめに</h2>
         <p>この度は、東京メトロ16000系データをダウンロードしてくださいましてありがとうございます。運転前に必ず当説明書をお読みください。</p>
         <h2 id="%E8%BB%8A%E4%B8%A1%E6%8C%87%E5%AE%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">車両指定について</h2>
@@ -73,14 +78,14 @@
         <p>キー操作は以下のようになっております。</p>
         <ul>
         <li>2：乗降促進（押している間乗降促進メロディー、離すと放送、停止時のみ）</li>
+        <li>3：回生開放（停止時）</li>
         <li>4：耐雪ブレーキ（ブレーキ4ステップ以上）</li>
         <li>5・6：ATC切り替えスイッチ（ブレーキ7ステップ以上）</li>
         <li>Space&amp;5・6：ATO切り替えスイッチ（ブレーキ7ステップ以上）</li>
         <li>5＆6：ATO出発スイッチ</li>
         <li>7・8：マスコンキー（マスコン非常、レバーサ断）</li>
-        <li>8：勾配起動（ブレーキ5ステップ以下）</li>
-        <li>9：回生開放（停止時）</li>
-        <li>0：ハイビーム</li>
+        <li>8：ハイビーム</li>
+        <li>Space：勾配起動（ブレーキ5ステップ以下）</li>
         <li>Home：非常ブレーキ復帰</li>
         <li>End：TASC開放（小田急線内のみ）</li>
         <li>End：合図ブザー</li>
@@ -95,23 +100,25 @@
         <li><a href="https://souko.weebly.com/oer_atspl.html">小田急線用プラグイン</a>	oer-meel様</li>
         </ul>
         <p>また、この車両のプラグインには変換プラグインを使用しており（下記詳細）、独自操作があります。詳しくは端子台（同梱）をご確認ください。</p>
-        <p>（追記）magicant様のBve-autopilotによるTASC機能は小田急線内では使用できないようになっています。小田急線内では小田急ATSプラグインに付属のTASCを利用してください。</p>
+        <h3 id="atotasc%E9%96%A2%E9%80%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ATO/TASC関連について</h3>
+        <ul>
+        <li>magicant様のBve-autopilotによるTASC機能は小田急線内では使用できないようになっています。小田急線内では小田急ATSプラグインに付属のTASCを利用してください。</li>
+        <li>ATC切換スイッチ「ATC」位置ではATO、「構内」位置ではTASCが利用できます。なお、東急キーの時は「ATC」位置でもTASCが利用できます。</li>
+        </ul>
         <h2 id="%E8%91%97%E4%BD%9C%E6%A8%A9">著作権</h2>
         <p>特定のライセンスは設定していませんが、以下の要項を必ずお守りください。</p>
         <p>一部のデータは許可を得てお借りしております。これらのデータの無断転載・2次利用は固くお断りいたします。こちらにその旨の質問を寄せられても、対処できません。</p>
         <ul>
         <li>Ats.dll 高橋うさお様</li>
-        <li>NotchNumber.dll あすく様</li>
         <li>atscnt.wav ぐりぃん・しゃとる様（9000系より借用）</li>
-        <li>CSC20_ND.dll Unicorn様</li>
-        <li>bve-autopilot.dll,Detailmanager_.dll,Detailmanager.exe magicant様（bve-autopilotは当方で改変を加えており、<a href="https://github.com/susLine2320/bve-autopilot-S">GitHub</a>で公開しています。）</li>
+        <li>「sound2」フォルダ内の「Uchibo」フォルダ内全ファイル 内房線制作チーム</li>
+        <li>bve-autopilot.dll<s>,MetropiLoader_.dll,MetropiLoader.exe</s> magicant様（bve-autopilotは当方で改変を加えており、<a href="https://github.com/susLine2320/bve-autopilot-S">GitHub</a>で公開しています。）</li>
         <li>OdakyuAts.dll,Pattern.wav oer-meel様</li>
         <li>sta1.wav,sta2.wav 鉄道・BVE・車内放送ちゃんねる様</li>
-        <li>PluginConverter.dll ハルピー様</li>
         </ul>
         <p>また、「sound3」フォルダ内のMotor*.wavと「MotorNoise」内のデータは、本データのためにりんくす様に制作していただいたものです。これらのデータの2次利用については、事前にりんくす様にお問い合わせください。</p>
         <p>「sound」フォルダ内のMotor*.wavと「MotorNoise」内のデータは、jus様に制作していただいたものです。これらのデータの2次利用はお断りいたします。</p>
-        <p>translate_oer.dll及びtranslate_oerB.dllは当方のデータです。このデータに関する詳細は添付のExcelファイルをご確認ください。</p>
+        <p>MetropiLoader.dllは当方のデータです。このデータに関する詳細は添付のExcelファイルをご確認ください。</p>
         <p>そのほかのデータの2次利用については、事前にLine-16にお問い合わせください。</p>
         <h2 id="%E5%8B%95%E7%94%BB%E6%8A%95%E7%A8%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">動画投稿について</h2>
         <p>動画については、未改造でしたら許可なしで投稿していただいて構いません。ただし、必ず保安装置を使用し、常識的な運転をしてください（つまりD-ATS-PまたはCS-ATCの路線でのみ使用してください。現実での運用実績は問いません）。改造した場合は、一度限定公開などで公開していただいてから、リンクを当方にお送りください。当方で判断し、可否をお知らせします。他の方の路線を使う場合は、その方の要項もご確認ください。</p>
@@ -143,13 +150,13 @@
         <li>v1.2公開：2020年1月19日</li>
         <li>v1.3公開：2020年9月21日</li>
         <li>v1.4公開：2021年5月5日　ファイル構成変更、Panel実写化</li>
-        <li>v1.5公開：2023年4月1日　プラグイン関係大幅変更、サウンド刷新（予定）</li>
+        <li>v1.5β公開：2023年10月1日　プラグイン関係大幅変更（サウンド刷新は後日）</li>
         </ul>
         <h2 id="author">Author</h2>
         <ul>
         <li>Twitter <a href="https://twitter.com/16000land">@16000land</a></li>
         <li>Web <a href="susLine2320.github.io">GitHub</a></li>
-        <li>Mail <a href="chiyoda16122@gmail.com">GMail</a></li>
+        <li>Mail <a href="mailto:chiyoda16122@gmail.com">GMail</a></li>
         </ul>
         <p>©Line-16 2018-2023</p>
         <!-- この中に項目をコピペ 下限-->
